@@ -161,6 +161,13 @@ function circle1(){
   next.position(20,100);
   next.mousePressed(circle2);
   }
+  function circlePressed() {
+  // Check if mouse is inside the circle
+  let d = dist(mouseX, mouseY, 300, 250);
+  if (d < 100) {
+    correct()
+  }
+}
   button.mousePressed(incorrect2);
   button2.mousePressed(incorrect2);
   button3.mousePressed(correct);
